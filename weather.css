@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: darkblue;
+}
+
+#header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(199, 215, 219, 0.432);
+}
+
+#background-img {
+    height: 60px;
+    width: 60px;
+    background-image: url("wether.app.jpg");
+    background-size: cover;
+    border-radius: 50%;
+}
+
+#weather-icon {
+    height: 60px;
+    width: 300px;
+    display: flex;
+    color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    border-radius: 50%;
+}
+
+#img {
+    height: 60px;
+    width: 60px;
+    background-image: url("Weather-Icon.jpg");
+    background-size: cover;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#search {
+    height: 30px;
+    width: 300px;
+    background-color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 50px;
+    /* border: 3px solid rgb(0, 0, 0); */
+}
+
+#search-button {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    padding: 5px 25px;
+    text-decoration: none;
+    font-family: montserrat;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+#location {
+    height: 50px;
+    width: 100%;
+    background-color: skyblue;
+}
+
+#third-div {
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(35, 35, 117);
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    /* position: absolute; */
+    display: flex;
+    align-items: center;
+}
+
+#third-div p {
+    display: inline-block;
+    /* padding-left: 100%; */
+    /* animation: scrollText 13s linear infinite; */
+    color: wheat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    /* text-align: center; */
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.temp-container {
+    width: 100%;
+    height: 700px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0lvb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.one, .two, .three, .four, .five {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    /* border: 2px solid gray; */
+}
+
+.temp-container #city {
+    text-decoration: underline;
+    color: whitesmoke;
+}
+/* #icon{
+    height: 100px;
+    width: 100px;
+
+} */
+
+#icon:hover {
+    height: 100px;
+    width: 100px;
+    background-color: gray;
+    border: 4px solid black;
+}
+
+footer {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: rgb(3, 3, 3);
+    /* position: fixed; */
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    color: black;
+    font-size: x-large;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    #weather-icon {
+        width: auto;
+        text-align: center;
+    }
+
+    #search {
+        width: 80%;
+    }
+
+    .one, .two, .three, .four, .five {
+        flex-direction: column;
+    }
+
+    #img {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    #search {
+        width: 90%;
+    }
+
+    .one, .two, .three, .four, .five {
+        justify-content: center;
+    }
+    
+
+    #third-div p {
+        font-size: medium;
+    }
+
+    .temp-container {
+        font-size: large;
+       
+    }
+
+    footer {
+        font-size: medium;
+        position: fixed;
+        bottom: 0;
+    }
+}
+
+
+
+@media(max-width:740px){
+ #header{
+    height: 250px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+ }
+    
+    #background-img {
+        height: 70px;
+        width: 70px;
+        background-image: url("wether.app.jpg");
+        background-size: cover;
+        border-radius: 50%;
+    }
+    
+    #weather-icon {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        color: wheat;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: large;
+        font-weight: bolder;
+        border-radius: 50%;
+    }
+    
+    #img {
+        height: 20px;
+        width: 20px;
+        background-image: url("Weather-Icon.jpg");
+        background-size: cover;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    
+    #search {
+        height: 40px;
+        width: 130px;
+        background-color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-size:small;
+        border-radius: 20px;
+        text-align: center;
+        margin-right: 50px;
+        /* border: 3px solid rgb(0, 0, 0); */
+    }
+    
+    #search-button {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        border-radius: 5px;
+        padding: 5px 25px;
+        text-decoration: none;
+        font-family: montserrat;
+        font-weight: 800;
+        font-size: 10px;
+    }
+    
+}
